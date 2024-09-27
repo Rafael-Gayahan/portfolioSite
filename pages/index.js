@@ -1,7 +1,8 @@
-import { Container, Box, Heading } from '@chakra-ui/react'
+import { Container, Box, Heading, Image } from '@chakra-ui/react'
 
 const Page = () => {
-    return <Container>
+    return (
+        <Container>
         <Box borderRadius='lg' bg = "red" p={3} mb={6} align="center">
             Hello I'm a developer based in Dallas, Texas!
         </Box>
@@ -12,8 +13,12 @@ const Page = () => {
                 </Heading>
                 <p>Learning to create more things </p>
             </Box>
+            <Box flexShrink={0} mt={{base: 4, md: 0, }} ml={{md: 6}}>
+                <Image borderColor='whiteAlpha.800' borderWidth={2} borderStyle='solid' maxWidth='100px' display='inline-block' borderRadius='full' src='/images/profile-pic.png' alt='profile-img'/>
+            </Box>
         </Box>
         </Container>
+    )
 }
 
 
